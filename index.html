@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title> motivational app by shifa </title>
+		<style>
+		*{font-size:60px; font-family:Times New Roman;}
+		body{background-color:thistle;}
+		</style>
+	
+	</head>
+
+	<body>
+	<center>
+ 		<h1> NEW MOTIVATIONAL APP </h1>
+		<h2 id="msg"/>
+
+		<script>
+			function mess()
+			{
+ 
+				let msg= document.getElementById("msg");
+				let messages= [
+				"Embrace the journey, not just the destination.", 
+				"Be a light in someone's cloud.",
+				"Your smile is your best accessory.",
+				"Moments become memories; make them beautiful.",
+				"Every sunrise brings new hope.",
+				"Kindness is a language everyone understands."
+				];
+
+				let r= parseInt(Math.random() *messages.length);
+				msg.innerHTML=messages[r];
+
+			}
+			mess();
+			setInterval(mess,4000);
+		</script>
+	</center>
+	</body>
+
+</html>
